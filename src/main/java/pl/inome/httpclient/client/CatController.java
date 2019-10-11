@@ -1,4 +1,4 @@
-package pl.inome.httpclient;
+package pl.inome.httpclient.client;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.client.RestTemplate;

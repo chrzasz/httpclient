@@ -1,4 +1,4 @@
-package pl.inome.httpclient;
+package pl.inome.httpclient.client;
 
 import java.util.HashMap;
 import java.util.Map;

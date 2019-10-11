@@ -10,7 +10,6 @@ import org.springframework.web.client.RestTemplate;
 public class CatController {
 
     public CatController() {
-
     }
 
     private AnimalFact getCatFact() {

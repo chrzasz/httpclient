@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ip View</title>
+</head>
+<body>
+<p th:text="${ipDetails.getIp()}" />
+<p th:text="${ipDetails.getContinentCode()}" />
+<p th:text="${ipDetails.getCountryName()}" />
+<p th:text="${ipDetails.getCity()}" />
+<p th:text="${ipDetails.getRegion()}" />
+<p th:text="${ipDetails.getOrg()}" />
+</body>
+</html>

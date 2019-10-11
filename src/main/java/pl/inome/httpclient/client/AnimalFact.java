@@ -147,6 +147,16 @@ public class AnimalFact {
         this.v = v;
     }
 
+    private String src;
+
+    public String getSrc() {
+        return src;
+    }
+
+    public void setSrc(String src) {
+        this.src = src;
+    }
+
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -171,6 +181,7 @@ public class AnimalFact {
                 ", text='" + text + '\'' +
                 ", v=" + v +
                 ", additionalProperties=" + additionalProperties +
+                ", src='" + src + '\'' +
                 '}';
     }
 }

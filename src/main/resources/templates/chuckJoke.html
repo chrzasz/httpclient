@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck Joke</title>
+</head>
+<body>
+<p th:text="${chuckJoke.getType()}" />
+
+<table>
+    <thead>
+    <tr>
+        <th> Id  </th>
+        <th> Joke </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${chuckJoke.getValue().isEmpty()}">
+        <td colspan="2"> No Jokes available today :( </td>
+    </tr>
+    <tr th:each="joke : ${chuckJoke.getValue()}">
+        <td><span th:text="${joke.getId()}"> ID </span></td>
+        <td><span th:text="${joke.getJoke()}"> Joke </span></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

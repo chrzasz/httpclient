@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+<form th:action="@{/weather}" method="get">
+    <p>Weather forecast for city: <input type="text" name="city">
+        <input type="submit" value="Show weather"></p>
+</form>
+
+<form th:action="@{/chuck-joke}" method="get">
+    <p>No of jokes: <input type="text" name="cnt">
+        <input type="submit" value="Show jokes"></p>
+</form>
+
+<form th:action="@{/ip-details}" method="get">
+    <p><input type="submit" value="IP details"></p>
+</form>
+
+<form th:action="@{/animal-fact}" method="get">
+    <p><input type="submit" value="Cat fact"></p>
+</form>
+
+</body>
+</html>

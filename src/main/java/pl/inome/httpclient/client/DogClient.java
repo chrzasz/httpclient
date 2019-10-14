@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
-import pl.inome.httpclient.api.Dog;
+import pl.inome.httpclient.model.Dog;
 
 import java.util.stream.Stream;
 

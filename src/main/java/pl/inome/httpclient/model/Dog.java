@@ -1,4 +1,4 @@
-package pl.inome.httpclient.api;
+package pl.inome.httpclient.model;
 
 public class Dog {
 

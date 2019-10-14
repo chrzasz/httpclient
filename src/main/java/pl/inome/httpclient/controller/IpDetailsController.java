@@ -1,9 +1,10 @@
-package pl.inome.httpclient.client;
+package pl.inome.httpclient.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.client.RestTemplate;
+import pl.inome.httpclient.model.IpDetails;
 
 @Controller
 public class IpDetailsController {
@@ -19,7 +20,6 @@ public class IpDetailsController {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
         return ipDetails;
     }
 

@@ -1,6 +1,7 @@
 package pl.inome.httpclient.api;
 
 import org.springframework.web.bind.annotation.*;
+import pl.inome.httpclient.model.Dog;
 
 import java.util.ArrayList;
 import java.util.List;

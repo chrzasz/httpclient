@@ -11,10 +11,14 @@ import pl.inome.httpclient.model.ChuckJoke;
 public class ChuckNorrisController {
 
     private ChuckJoke getChuckJoke(String noOfJokes) {
-        RestTemplate restTemplate = new RestTemplate();
-        ChuckJoke joke = restTemplate.getForObject(
-                "http://api.icndb.com/jokes/random/" + noOfJokes, ChuckJoke.class);
-        return joke;
+        if (!noOfJokes.isEmpty() && noOfJokes.matches("[0-9]")) {
+            RestTemplate restTemplate = new RestTemplate();
+            ChuckJoke joke = restTemplate.getForObject(
+                    "http://api.icndb.com/jokes/random/" + noOfJokes, ChuckJoke.class);
+            return joke;
+        }
+        return new ChuckJoke();
+
     }
 
     @GetMapping("chuck-joke")

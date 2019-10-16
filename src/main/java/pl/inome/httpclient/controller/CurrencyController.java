@@ -19,7 +19,6 @@ public class CurrencyController {
     }
 
     private int checkCurrency(String plnRate) {
-
         if (!plnRate.isEmpty()) {
             try {
                 BigDecimal value = BigDecimal.valueOf(Double.parseDouble(plnRate));

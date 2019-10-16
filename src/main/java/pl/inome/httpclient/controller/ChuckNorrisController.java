@@ -17,7 +17,7 @@ public class ChuckNorrisController {
         return joke;
     }
 
-    @GetMapping("chuck-joke")
+    @GetMapping("/chuck-joke")
     public String get(Model model, @RequestParam String cnt) {
         model.addAttribute("chuckJoke", getChuckJoke(cnt));
         return "chuckJoke";

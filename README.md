@@ -1,6 +1,6 @@
 # HTTP-client Spring-boot  application
 HTTP client with sample APIs
-1. Currency game - guess PLN rate of USD hhttps://exchangeratesapi.io
+1. Currency game - guess PLN rate of USD https://exchangeratesapi.io
 2. Weather forecast for specific city  https://openweathermap.org/api
 
 NOTE: value for key: `api-openweathermap.appid=` required in application.properties file.

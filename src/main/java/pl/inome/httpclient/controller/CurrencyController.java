@@ -19,7 +19,7 @@ public class CurrencyController {
     }
 
     private int checkCurrency(String plnRate) {
-        if (!plnRate.isEmpty() && plnRate.matches("[0-9]{1,}[.]{1}[0-9]{2}")) {
+        if (!plnRate.isEmpty() && plnRate.matches("[0-9]{1,}[.]{0,1}[0-9]{0,2}")) {
             try {
                 BigDecimal value = BigDecimal.valueOf(Double.parseDouble(plnRate));
                 return value.compareTo(getPlnRate());

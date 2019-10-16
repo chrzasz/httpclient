@@ -11,12 +11,12 @@ import pl.inome.httpclient.model.ChuckJoke;
 public class ChuckNorrisController {
 
     private ChuckJoke getChuckJoke(String noOfJokes) {
-        noOfJokes.trim();
+        String noOfJokesTrim = noOfJokes.trim();
         RestTemplate restTemplate = new RestTemplate();
-        if (!noOfJokes.isEmpty() && noOfJokes.matches("[0-9]{1,}")) {
+        if (!noOfJokesTrim.isEmpty() && noOfJokesTrim.matches("[0-9]{1,}")) {
             try {
                 ChuckJoke joke = restTemplate.getForObject(
-                        "http://api.icndb.com/jokes/random/" + noOfJokes, ChuckJoke.class);
+                        "http://api.icndb.com/jokes/random/" + noOfJokesTrim, ChuckJoke.class);
                 return joke;
             } catch (Exception e) {
                 System.out.println(e.getMessage());

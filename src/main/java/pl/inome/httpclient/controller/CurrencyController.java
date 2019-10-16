@@ -19,10 +19,10 @@ public class CurrencyController {
     }
 
     private int checkCurrency(String plnRate) {
-        plnRate.trim();
-        if (!plnRate.isEmpty() && plnRate.matches("[0-9]{1,}[.]{0,1}[0-9]{0,2}")) {
+        String plnRateTrim = plnRate.trim();
+        if (!plnRateTrim.isEmpty() && plnRateTrim.matches("[0-9]{1,}[.]{0,1}[0-9]{0,2}")) {
             try {
-                BigDecimal value = BigDecimal.valueOf(Double.parseDouble(plnRate));
+                BigDecimal value = BigDecimal.valueOf(Double.parseDouble(plnRateTrim));
                 return value.compareTo(getPlnRate());
             } catch (Exception e) {
                 System.out.println(e.getMessage());

@@ -21,7 +21,7 @@ public class CatController {
         return animalFact;
     }
 
-    @GetMapping("/animal-fact")
+    @GetMapping("animal-fact")
     public String get(Model model) {
         model.addAttribute("catFact", getCatFact());
         return "animalView";

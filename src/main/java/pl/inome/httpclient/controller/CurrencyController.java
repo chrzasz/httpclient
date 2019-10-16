@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 @Controller
 public class CurrencyController {
 
-    @GetMapping("/currency")
+    @GetMapping("currency")
     public String get(Model model, @RequestParam String plnRate) {
         model.addAttribute("plnRate", checkCurrency(plnRate));
         return "currencyView";

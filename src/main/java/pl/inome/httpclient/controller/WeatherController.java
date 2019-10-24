@@ -29,7 +29,7 @@ public class WeatherController {
         return weather;
     }
 
-    @GetMapping("weather")
+    @GetMapping("/weather")
     public String get(Model model, @RequestParam String city) {
         model.addAttribute("weather", getWeatherForCity(city));
         return "weatherView";

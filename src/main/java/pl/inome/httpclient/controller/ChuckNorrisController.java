@@ -26,7 +26,7 @@ public class ChuckNorrisController {
                 "http://api.icndb.com/jokes/random/0", ChuckJoke.class);
     }
 
-    @GetMapping("chuck-joke")
+    @GetMapping("/chuck-joke")
     public String get(Model model, @RequestParam String cnt) {
         model.addAttribute("chuckJoke", getChuckJoke(cnt));
         return "chuckJokeView";

@@ -23,7 +23,7 @@ public class IpDetailsController {
         return ipDetails;
     }
 
-    @GetMapping("ip-details")
+    @GetMapping("/ip-details")
     public String get(Model model) {
         model.addAttribute("ipDetails", getIpDetails());
         return "ipView";

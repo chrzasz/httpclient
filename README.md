@@ -10,4 +10,4 @@ NOTE: value for key: `api-openweathermap.appid=` required in application.propert
 5. Cat facts https://alexwohlbruck.github.io/cat-facts/docs/  with with random photo: https://aws.random.cat/
 
 ## Thymeleaf
-demo application here: http://chrzasz.ddns.net:8081/
+demo application here: https://http-client-demo.herokuapp.com/
